@@ -1,0 +1,3 @@
+python-dotenv # used to call the environment valriables
+pandas 
+numpy
