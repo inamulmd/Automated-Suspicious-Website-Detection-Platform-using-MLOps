@@ -24,7 +24,7 @@ if __name__=='__main__':
         logging.info("data Validation Completed")
         print(data_validation_artifact)
 
-        data_transformation_config=DataValidationConfig(trainingpipelineconfig)
+        data_transformation_config=DataTransformationConfig(trainingpipelineconfig)
         data_transformation=DataTransformation(data_validation_artifact,data_transformation_config)
         logging.info("Initiate the data transformation")
         data_transformation_artifact=data_transformation.initiate_data_transformation()
