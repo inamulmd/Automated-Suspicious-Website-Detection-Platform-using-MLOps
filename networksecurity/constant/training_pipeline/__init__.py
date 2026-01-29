@@ -45,7 +45,7 @@ DATA_VALIDATION_DRIFT_REPORT_FILE_NAME:str ="report.yaml"
 Data transformation realted constant start with Data_tranformation Var Name
 """
 
-DATA_TRANSFORMATION_DIR_NAME:str ="data_transformaion"
+DATA_TRANSFORMATION_DIR_NAME:str ="data_transformation"
 DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR:str ="transformed"
 DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR:str ="transformed_object"
 
