@@ -34,7 +34,7 @@ if __name__=='__main__':
 
 
         logging.info("Model Training Started")
-        model_trianer_config=ModelTrainerConfig(TrainingPipelineConfig)
+        model_trianer_config=ModelTrainerConfig(trainingpipelineconfig)
         model_trainer=ModelTrainer(model_trianer_config, data_transformation_artifact)
         model_trainer_artifact=model_trainer.initiate_model_trainer()
         print(model_trainer_artifact)
