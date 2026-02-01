@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.impute import KNNImputer
 from sklearn.pipeline import Pipeline
+import mlflow
 
 
 
@@ -42,6 +43,17 @@ class ModelTrainer:
             self.data_transformation_artifact=data_tranformation_artifact
         except Exception as e:
             raise NetworkSecurityException(e,sys)
+        
+    def track_mlflow(self,best_model,classificationmetric):
+            with mlflow.start_run():
+                f1_score=classificationmetric.f1_score
+                precision_score=classificationmetric.precision_score
+                recall_score=classificationmetric.recall_score 
+
+                mlflow.log_metric("f1_score",f1_score)
+                mlflow.log_metric("precision", precision_score)
+                mlflow.log_metric("recall_score", recall_score) 
+                mlflow.sklearn.log_model(best_model,'model')   
         
 
     def train_model(self,X_train,y_train,X_test,y_test):
@@ -97,7 +109,10 @@ class ModelTrainer:
 
         classfication_train_metric=get_classification_score(y_true=y_train,y_pred=y_train_pred)
 
-        ## Track the  mlflow
+
+        ## Track the experiment of differnt model and  mlflow
+        self.track_mlflow(best_model,get_classification_score(y_true=y_train,y_pred=y_train_pred))
+
 
         y_test_pred=best_model.predict(X_test)
         classfication_test_metric=get_classification_score(y_true=y_test,y_pred=y_test_pred)
