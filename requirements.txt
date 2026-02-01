@@ -7,5 +7,6 @@ pymongo[srv]>=4.6
 scikit-learn
 mlflow
 pyaml
+dagshub
 
 # -e .
