@@ -1,4 +1,4 @@
-##Automated Suspicious Website Detection Platform using MLOps
+## Automated Suspicious Website Detection Platform using MLOps
 
 An end-to-end machine learning–based security system that detects suspicious / phishing websites using engineered URL security features and a production-style MLOps pipeline.
 The project is designed as a backend ML service, exposed via FastAPI, following real-world ML engineering practices.
