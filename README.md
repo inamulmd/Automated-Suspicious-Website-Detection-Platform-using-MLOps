@@ -87,6 +87,7 @@ Cloud (Planned)	AWS S3, ECR, EC2
 
 
 ### Project Structure
+'''
 Network_Security/
 │
 ├── app.py                      # FastAPI application entry point
@@ -111,6 +112,7 @@ Network_Security/
 │   └── workflows/              # CI/CD pipelines (planned)
 │
 └── README.md                   # Project documentation
+'''
 
 🔌 API Usage
 🔹 Predict Suspicious Website (JSON API)
