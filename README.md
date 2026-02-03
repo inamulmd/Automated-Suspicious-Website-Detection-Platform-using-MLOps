@@ -87,32 +87,33 @@ Cloud (Planned)	AWS S3, ECR, EC2
 
 
 ### Project Structure
-'''
+
+```md
+```text
 Network_Security/
-│
-├── app.py                      # FastAPI application entry point
-│
-├── networksecurity/            # Core ML & pipeline logic
-│   ├── components/             # Data ingestion, training, evaluation modules
-│   ├── pipeline/               # Training & prediction pipelines
-│   ├── utils/                  # Common utility functions
-│   ├── exception/              # Custom exception handling
-│   └── logger/                 # Centralized logging
-│
-├── final_model/                # Trained model artifacts
-│   ├── model.pkl               # Trained ML model
-│   └── preprocessor.pkl        # Feature preprocessing pipeline
-│
-├── templates/                  # UI templates (demo only)
-│   └── table.html              # HTML table for prediction output
-│
-├── requirements.txt            # Python dependencies
-├── Dockerfile                  # Docker configuration (planned)
-├── .github/
-│   └── workflows/              # CI/CD pipelines (planned)
-│
-└── README.md                   # Project documentation
-'''
+|
++-- app.py
+|
++-- networksecurity/
+|   +-- components/
+|   +-- pipeline/
+|   +-- utils/
+|   +-- exception/
+|   +-- logger/
+|
++-- final_model/
+|   +-- model.pkl
+|   +-- preprocessor.pkl
+|
++-- templates/
+|   +-- table.html
+|
++-- requirements.txt
++-- Dockerfile
++-- .github/
+|   +-- workflows/
+|
++-- README.md
 
 🔌 API Usage
 🔹 Predict Suspicious Website (JSON API)
