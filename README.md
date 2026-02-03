@@ -3,7 +3,7 @@
 An end-to-end machine learning–based security system that detects suspicious / phishing websites using engineered URL security features and a production-style MLOps pipeline.
 The project is designed as a backend ML service, exposed via FastAPI, following real-world ML engineering practices.
 
-📌 Problem Statement
+###📌 Problem Statement
 
 Phishing and malicious websites are a daily cybersecurity threat.
 Traditional blacklist-based systems fail to detect new and unseen malicious URLs.
@@ -14,7 +14,7 @@ Learning behavioral and structural patterns of malicious websites
 
 Using machine learning models trained on security features
 
-Deploying the model as a scalable backend service
+### Deploying the model as a scalable backend service
 
 🚀 Key Features
 
@@ -32,7 +32,7 @@ Deploying the model as a scalable backend service
 
 ✅ Ready for containerization & cloud deployment
 
-🧠 Dataset Overview
+###  Dataset Overview
 
 The dataset consists of engineered URL security features, not raw URLs.
 
@@ -74,7 +74,7 @@ FastAPI Inference Service
         ↓
 Prediction Output (JSON / UI)
 
-⚙️ Tech Stack
+ ### Tech Stack
 Category	Tools
 Language	Python
 ML	Scikit-learn
@@ -86,7 +86,7 @@ Deployment Ready	Docker, GitHub Actions
 Cloud (Planned)	AWS S3, ECR, EC2
 
 
-📂 Project Structure
+### Project Structure
 Network_Security/
 │
 ├── app.py                      # FastAPI application entry point
@@ -154,7 +154,7 @@ Single-row inference latency: < 30 ms
 
 Optimized for real-time usage
 
-🧪 How to Run Locally
+### How to Run Locally
 # create virtual environment
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
